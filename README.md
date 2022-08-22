@@ -16,7 +16,7 @@ yum install libselinux-python 安裝相依套件
 
 3.ansible Web,Test -m command -a "cat /etc/redhat-release"  就可以看到是否成功 
 
-### B
+### P
 
 執行bk_mysql.sh，備份、刪除、還原資料庫
 
