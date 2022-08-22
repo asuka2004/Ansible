@@ -12,7 +12,7 @@ yum install libselinux-python 安裝相依套件
 
 1.執行deploy_sshkey.sh，部屬ssh key免帳密登入
  
-2.並設定ansible host設定檔
+2.ansible host設定檔範本
 
 3.ansible Web,Test -m command -a "cat /etc/redhat-release"  就可以看到是否成功 
 
