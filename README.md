@@ -1,12 +1,12 @@
-# Mysql 學習筆記  
+# Ansible 學習筆記  
 
-作業環境  OS: CentOS 7.9  DB: Mysql 5.7  
+作業環境  OS: CentOS 7.9  Tools: Ansible 2.9.27 
 
-目前採用二進制安裝  官網載點 https://downloads.mysql.com/archives/get/p/23/file/mysql-5.7.37-el7-x86_64.tar.gz
+### Install Ansible 
 
-### Install DB Script
+yum install ansible 安裝Ansible
 
-腳本內容: 下載Mysql、執行解壓縮及並初始化、環境設定、啟動DB等。 
+yum install libselinux 安裝相依套件   
 
 下载Script脚本、Mysql程式、配置文件，執行install_mysql.sh
  
