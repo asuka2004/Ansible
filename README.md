@@ -16,17 +16,10 @@ yum install libselinux-python 安裝相依套件
 
 3.ansible Web,Test -m command -a "cat /etc/redhat-release"  就可以看到是否成功 
 
+### B
 
-### Backup DB Script
-    
 執行bk_mysql.sh，備份、刪除、還原資料庫
 
-### Monitor DB Script
+### M
     
-1.執行monitor_mysql，監控Mysql 
-
-2.加入排程，指令如下
-
-echo "Monitor DB" >>/var/spool/cron/root
-
 echo */5 * * * * /use/bin/sh -x /root/project/Mysql/monitor/monitor_db.sh >>/var/spool/cron/root
