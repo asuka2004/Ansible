@@ -6,7 +6,7 @@
 
 yum install ansible 安裝Ansible
 
-yum install libselinux 安裝相依套件   
+yum install libselinux-python 安裝相依套件   
 
 下载Script脚本、Mysql程式、配置文件，執行install_mysql.sh
  
