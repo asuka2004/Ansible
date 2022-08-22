@@ -10,7 +10,7 @@ yum install libselinux-python 安裝相依套件
 
 ### Deploy SSH Key  Script
 
-1.執行deploy_sshkey.sh部屬ssh key 免帳密登入
+1.執行deploy_sshkey.sh，部屬ssh key免帳密登入
  
 2.並設定ansible host設定檔
 
