@@ -8,13 +8,14 @@ yum install ansible 安裝Ansible
 
 yum install libselinux-python 安裝相依套件   
 
-下载Script脚本、Mysql程式、配置文件，執行install_mysql.sh
- 
-### CRUD Script
+### Deploy SSH Key  Script
 
-1.執行create_data.sh 可以產生千萬級別的sql語法，並source /tmp/sql.txt匯入
+1.執行deploy_sshkey.sh部屬ssh key 免帳密登入
  
-2.執行crud_mysql.sh，可以新增、刪除、修改、查詢資料
+2.並設定ansible host設定檔
+
+3.ansible Web,Test -m command -a "cat /etc/redhat-release"  就可以看到是否成功 
+
 
 ### Backup DB Script
     
