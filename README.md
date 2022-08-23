@@ -14,7 +14,7 @@ yum install libselinux-python 安裝相依套件
  
 2.ansible.cfg 設定檔，設定改由 Kung 去執行遠端工作
 
-3.asnsible host 設定檔
+3.hosts 遠端主機設定檔
 
 3.ansible Web,Test -m command -a "cat /etc/redhat-release"  就可以看到是否成功 
 
