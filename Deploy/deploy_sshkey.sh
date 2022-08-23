@@ -17,10 +17,10 @@ Log_Path=/root/tmp
 
 rm -f ~/.ssh/id_rsa*
 ssh-keygen -f ~/.ssh/id_rsa -P " " >/dev/null 2>&1
-SSH_PASS=
+Ssh_Pass=
 Key_Path=~/.ssh/id_rsa.pub
 for ip in 25 26 101
 do
-	sshpass -p$SSH_PASS ssh-copy-id -i $Key_Path "-o StrictHostKeyChecking=no" 192.168.88.$ip
+	sshpass -p$Ssh_Pass ssh-copy-id -i $Key_Path "-o StrictHostKeyChecking=no" Kung@192.168.88.$ip
 
 done
