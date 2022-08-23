@@ -20,7 +20,7 @@ yum install libselinux-python 安裝相依套件
 
 ### Playbook
 
-1.執行deploy_sshkey.sh，部屬ssh key免帳密登入遠端主機
+1.安裝http劇本:http.yaml
  
 2.ansible.cfg 設定檔，設定改由 Kung 去執行遠端工作
 
