@@ -1,0 +1,10 @@
+---
+  - name: add user for managed hosts
+    hosts: Web,Test 
+    vars_files: vars/username.ymal
+    tasks:
+      - name: add username "{{username}}"
+        user:
+          user: "{{username}}"
+          uid: "{{uid}}"
+          password: "{{password}}"

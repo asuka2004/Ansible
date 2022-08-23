@@ -1,0 +1,26 @@
+---
+  - name: setup web server and add first web page
+    hosts: Test
+    tasks:
+      - name: install httpd packages
+        yum:
+          name: httpd
+          state: latest
+
+      - name: start and enable httpd service
+        service:
+          name: httpd
+          enabled: true
+          state: started
+
+      - name: create first web page for index.html
+        copy:
+          content: 'test'
+          dest: /var/www/html/index.html
+      
+      - name: add http port to firewalld
+        firewalld:
+         immediate: true
+         permanent: true
+         service: http
+         state: enabled

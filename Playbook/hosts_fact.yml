@@ -1,0 +1,13 @@
+---
+  - name: list my managed hosts facts
+    hosts: Web,Test 
+
+    tasks:
+      - name: list managed hosts facts
+        debug:
+          msg: |
+            The IPv4 IP address is {{ansible_facts['default_ipv4']['address']}}
+            The host name is {{ansible_facts['fqdn']}}
+            The kernel version is {{ansible_facts['kernel']}}
+            The network card is {{ansible_facts['interfaces']}}
+

@@ -1,0 +1,8 @@
+---
+  - name: copy /etc/hosts to hosts
+    hosts: Web,Test
+    tasks:
+    - name: copy /etc/hosts to another
+      copy:
+       src: /etc/hosts
+       dest: /etc/hosts
