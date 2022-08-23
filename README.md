@@ -1,6 +1,6 @@
 # Ansible 學習筆記  
 
-作業環境  OS: CentOS 7.9    Tools:Ansible 2.9.27 
+作業環境  OS: CentOS 7.9 Tools:Ansible 2.9.27 
 
 ### Install Ansible 
 
