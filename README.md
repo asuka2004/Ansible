@@ -22,7 +22,9 @@ yum install libselinux-python 安裝相依套件
 
 1.安裝http劇本:http.yaml
  
-2.
+3.hosts 遠端主機設定檔
+
+4.ansible Web,Test -m command -a "cat /etc/redhat-release"  就可以看到是否成功 2.
 
 3.hosts 遠端主機設定檔
 
