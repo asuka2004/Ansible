@@ -20,8 +20,6 @@ yum install libselinux-python 安裝相依套件
 
 ### Playbook
 
-執行bk_mysql.sh，備份、刪除、還原資料庫
+1.
 
-### M
-    
-echo */5 * * * * /use/bin/sh -x /root/project/Mysql/monitor/monitor_db.sh >>/var/spool/cron/root
+2.
