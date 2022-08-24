@@ -20,12 +20,12 @@ yum install libselinux-python 安裝相依套件
 
 ### Playbook
 
-1.安裝http劇本:http.yaml
+1.http安裝劇本: http.yaml
  
-2.hosts 遠端主機設定檔
+2.複製檔案劇本: copy_hosts.yml
 
-3.ansible Web,Test -m command -a "cat /etc/redhat-release"  就可以看到是否成功 2.
+3.查詢系統狀況劇本: hosts_fact.yml
 
-4.hosts 遠端主機設定檔
+4.遠端增加使用者劇本: var_user_add.ymal
 
 5.ansible Web,Test -m command -a "cat /etc/redhat-release"  就可以看到是否成功 
