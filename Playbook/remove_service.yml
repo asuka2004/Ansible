@@ -1,0 +1,44 @@
+---
+  - name: remove web server packages
+    hosts:
+      - Test 
+    vars:
+      pkgs:
+        - httpd
+        - php
+        - mariadb-server
+        - mariadb
+    tasks:
+      - name: remove index.html
+        file:
+          path: /var/www/html/index.html
+          state: absent
+      - name: remove /var/www/https
+        file:
+          path: /var/www/https
+          recurse: true
+          state: absent
+      - name: remove apache.pw
+        file:
+          path: /var/www/apache.pw
+          state: absent
+      - name: remove virhosts.conf
+        file:
+          path: /etc/httpd/conf.d/virhosts.conf
+          state: absent
+      - name: remove packages
+        yum:
+          name: "{{pkgs}}"
+          state: removed
+      - name: firewalld
+        firewalld:
+          immediate: true
+          permanent: true
+          service: http
+          state: disabled
+      - name: firewalld
+        firewalld:
+          immediate: true
+          permanent: true
+          service: https
+          state: disabled

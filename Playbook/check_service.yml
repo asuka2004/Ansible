@@ -1,0 +1,10 @@
+---
+  - name: do not use loop to show service
+    hosts: Test
+    tasks:
+      - name: check "{{item}}" service status
+        command:
+          cmd: systemctl is-active "{{item}}"
+        loop:
+          - httpd
+          - sshd
